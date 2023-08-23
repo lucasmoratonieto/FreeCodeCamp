@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Survey Form</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main>
+        <div class="tittle">
+      <h1 id="title">Lucas Survey Form</h1>
+      <p id="description">This is a form to show a page in a survey form</p>
+    </div>
+      <form id="survey-form" class="survey-form ">
+        <label for="name" id="name-label" >Name</label>
+        <input type="text" id="name" required placeholder="Name" class="input-textarea"/>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Email" class="input-textarea"/>
+        <label for="number" id="number-label">Number</label>
+        <input
+          type="number"
+          id="number"
+          min="18"
+          max="150"
+          placeholder="Number" class="input-textarea"
+        />
+        <h2>How did you find me?</h2>
+        <select name="findMe-dropdown" id="dropdown">
+          <option value="linkedin-dropdown">Linkedin</option>
+          <option value="github-dropdown">GitHub</option>
+          <option value="recommendation-dropdown">Recommendation</option>
+          <option value="other-dropdown">Other</option>
+        </select>
+        <h2>Why do you want to contact me?</h2>
+        <label
+          ><input id="work" type="radio" name="contact" value="Work" class=".input-radio" />
+          Work</label
+        >
+        <label
+          ><input id="outdoor" type="radio" name="contact" value="meetme" class=".input-radio"/>
+          Meet me</label
+        >
+        <input id="outdoor" type="radio" name="contact" value="other" class=".input-radio"/>
+        Other</label
+        >
+        <h2>Check box with no info</h2>
+        <label>
+            <input type="checkbox" id="work" value="Dontknow1" class=".input-checkbox">Don´t know what to put here
+        </label>
+        <label>
+            <input type="checkbox" id="work" value="Dontknow2" class=".input-checkbox"
+            >Don´t know what to put here either
+        </label>
+        <form>
+            <p><label for="contact-text">Please, send me a message!</label></p>
+            <textarea id="contact-text" name="contact-text" rows="20" cols="50" class="input-textarea" placeholder="Enter here your message"></textarea>
+            <br>
+            <input type="submit" id="submit" value="Submit">
+          </form>
+          
+          <p>Click the "Submit" button and the form-data will be sent to a page on the 
+          server called "action_page.php".</p>
+      </form>
+    </main>
+
+  </body>
+</html>
