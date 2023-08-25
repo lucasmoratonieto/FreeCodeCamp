@@ -92,7 +92,6 @@ li {
 /*  Projects section */
 .projects-section {
   width: 100%;
-
   background-color: #5a55a5;
 }
 
@@ -101,6 +100,7 @@ li {
   margin-top: 50px;
   margin-left: 5%;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 5%;
 }
 
 .projects-section-header {
